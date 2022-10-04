@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { UserCard } from './UserCard/UserCard';
 import { UserStats } from './UserStats/UserStats';
+import { Container } from './Profile.styled';
 
 export function Profile({ user:{username, tag, location, avatar, stats} }) {
     return (
-    <div className="profile">
+    <Container>
     <UserCard
         username={username}
         tag={tag}
@@ -16,7 +17,7 @@ export function Profile({ user:{username, tag, location, avatar, stats} }) {
         views={stats.views}
         likes={stats.likes}
     />
-    </div>
+    </Container>
     );
 }
 

@@ -1,18 +1,18 @@
 import PropTypes from "prop-types";
+import { Wrapper, Avatar, UserName, Tag, Location } from "./UserCard.styled";
 
 export function UserCard({ avatar, username, tag, location }) {
     return (
 
-    <div className="description">
-    <img
+    <Wrapper>
+    <Avatar
       src={avatar}
       alt="User avatar"
-      className="avatar"
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
-  </div>
+    <UserName>{username}</UserName>
+    <Tag>@{tag}</Tag>
+    <Location>{location}</Location>
+  </Wrapper>
     )
 }
 
