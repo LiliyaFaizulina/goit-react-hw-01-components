@@ -10,13 +10,15 @@ const setBgColor = ({children, theme})=> {
             return theme.bgColors.red;
         case ".psd":
             return theme.bgColors.azure;
+        default:
+            return theme.bgColors.green;
     }
 }
 
 export const Section = styled.section`
     margin: 30px auto;
     padding-top: 30px;
-    width: 280px;
+    width: 300px;
     text-align: center;
     box-shadow: 0px 1px 4px rgba(126, 147, 255, 0.2);
     border-radius: 6px;
